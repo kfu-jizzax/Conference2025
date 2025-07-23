@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Научная конференция</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+    }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .logos {
+      display: flex;
+      gap: 20px;
+    }
+    .logos img {
+      height: 60px;
+    }
+    .menu-button {
+      font-size: 30px;
+      cursor: pointer;
+      display: block;
+    }
+    .hero {
+      background: linear-gradient(rgba(0,51,102,0.7), rgba(0,51,102,0.7)), url("IMG.jpg") no-repeat center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px 60px;
+    }
+    .hero h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+    .hero h2 {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .button {
+      background-color: transparent;
+      border: 2px solid white;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .button:hover {
+      background-color: white;
+      color: #003366;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .box {
+      border: 1px solid #ccc;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+    .contacts {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .sidebar {
+      display: none;
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 200px;
+      background: #003366;
+      color: white;
+      padding: 30px 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logos">
+      <img src="logo1.png" alt="Логотип 1">
+      <img src="logo2.png" alt="Логотип 2">
+      <img src="logo3.png" alt="Логотип 3">
+    </div>
+    <div class="menu-button" onclick="toggleSidebar()">☰</div>
+  </header>
+
+  <div class="sidebar" id="sidebar">
+    <p>1..........</p>
+    <p>2.........</p>
+    <p>3.........</p>
+  </div>
+
+  <section class="hero">
+    <h1>Научно-практическая конференция с международным участием</h1>
+    <h2>"Научно-технические и социокультурные проблемы современного общества"</h2>
+    <p>Дата проведения: 20–21 ноября 2025 года, г. Джизак, филиал КФУ</p>
+    <div class="buttons">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScQnMUBX2hPiQgm1TV2xDKThy1X-0ErGjphRMn7Xt4Lne_nGw/viewform" class="button">Регистрация</a>
+      <a href="pdf1.pdf" class="button">Информационное письмо</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>О конференции</h2>
+    <div class="box">
+      <p>В рамках данной международной конференции будут рассмотрены следующие направления:</p>
+      <ul>
+        <li>инновационные методы преподавания естественных наук в медицинских вузах;</li>
+        <li>применение цифровых технологий и симуляционных методов в подготовке медицинских специалистов;</li>
+        <li>междисциплинарный подход в интеграции биологических и медицинских наук;</li>
+        <li>робототехника, искусственный интеллект и автоматизация производства;</li>
+        <li>программное обеспечение и системы управления для промышленного применения;</li>
+        <li>разработка и внедрение экологически чистых технологий;</li>
+        <li>цифровая трансформация экономики и общества;</li>
+        <li>инновационные стратегии развития бизнеса в условиях глобализации;</li>
+        <li>управление человеческими ресурсами в инновационной экономике;</li>
+        <li>постмодернизм и его влияние на современную философию и социологию;</li>
+        <li>изменения в языковой культуре и коммуникации в эпоху цифровизации;</li>
+        <li>роль искусства, литературы и культуры в формировании постмодернистского общества;</li>
+        <li>социокультурные вызовы и их влияние на образовательные и научные системы.</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="contacts">
+    <p>Контакты: @gaybullaevich | +998902961133 | conf2025@kfu.uz</p>
+  </div>
+
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.style.display = sidebar.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>
